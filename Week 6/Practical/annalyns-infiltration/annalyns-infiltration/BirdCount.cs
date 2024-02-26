@@ -35,7 +35,10 @@ public class BirdCount
     public static int[] LastWeek()
     {
         // TODO: Implement the 'LastWeek()' method
-        throw new NotImplementedException("Please implement the (static) BirdCount.LastWeek() method");
+        //throw new NotImplementedException("Please implement the (static) BirdCount.LastWeek() method");
+
+        int[] birdsArray = { 0, 2, 5, 3, 7, 8, 4 };
+        return birdsArray;
     }
 
     /// <summary>
@@ -48,7 +51,10 @@ public class BirdCount
     public int Today()
     {
         // TODO: Implement the 'Today()' method
-        throw new NotImplementedException("Please implement the BirdCount.Today() method");
+        //throw new NotImplementedException("Please implement the BirdCount.Today() method");
+        // return 
+
+
     }
 
     /// <summary>
@@ -59,7 +65,9 @@ public class BirdCount
     public void IncrementTodaysCount()
     {
         // TODO: Implement the 'IncrementTodaysCount()' method
-        throw new NotImplementedException("Please implement the BirdCount.IncrementTodaysCount() method");
+       // throw new NotImplementedException("Please implement the BirdCount.IncrementTodaysCount() method");
+        //int todaysNum = [];
+        //return (todaysNum + birdsPerDay)++;
     }
 
     /// <summary>
@@ -71,7 +79,14 @@ public class BirdCount
     public bool HasDayWithoutBirds()
     {
         // TODO: Implement the 'HasDayWithoutBirds()' method
-        throw new NotImplementedException("Please implement the BirdCount.HasDayWithoutBirds() method");
+        //throw new NotImplementedException("Please implement the BirdCount.HasDayWithoutBirds() method");
+        if (_birdsPerDay == null)
+        {
+            Console.WriteLine("No birds visited today");
+            
+        }
+        return true;
+
     }
 
     /// <summary>
@@ -86,7 +101,11 @@ public class BirdCount
     public int CountForFirstDays(int numberOfDays)
     {
         // TODO: Implement the 'CountForFirstDays()' method
-        throw new NotImplementedException("Please implement the BirdCount.CountForFirstDays() method");
+        // throw new NotImplementedException("Please implement the BirdCount.CountForFirstDays() method");
+
+        return 5;
+
+        
 
     }
     /// <summary>
