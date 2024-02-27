@@ -22,7 +22,6 @@ namespace LuciansLusciousLasagna
             //throw new NotImplementedException("Please implement the ExpectedMinutesInOven() method");
 
             return 40;
-
         }
         /// <summary>
         /// The RemainingMinutesInOven method that takes the actual minutes the lasagna has been in
@@ -38,9 +37,8 @@ namespace LuciansLusciousLasagna
             // TODO: Implement the 'RemainingMinutesInOven()' method
             // throw new NotImplementedException("Please implement the RemainingMinutesInOven() method");
 
-           return 40 - durationInOven;
-        
-
+           return (ExpectedMinutesInOven() - durationInOven);
+           // return (40 - durationInOven); 
         }
 
         /// <summary>
@@ -55,8 +53,7 @@ namespace LuciansLusciousLasagna
             // TODO: implement the 'PreparationTimeInMinutes()' method
             //throw new NotImplementedException("Please implement the PreparationTimeInMinutes() method");
 
-            return layers;
-
+            return (layers*2);
         }
 
         /// <summary>
