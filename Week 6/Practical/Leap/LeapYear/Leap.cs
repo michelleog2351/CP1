@@ -22,6 +22,7 @@
 */
 
 using System;
+using System.IO;
 
 namespace LeapYear
 {
@@ -37,7 +38,39 @@ namespace LeapYear
         public static bool IsLeapYear(int year)
         {
             //TODO Implement the IsLeapYear method
-            throw new NotImplementedException("You need to implement this function.");
+            //throw new NotImplementedException("You need to implement this function.");
+
+
+            // Method 1:
+            // if statement checks whether the year is divisible by 4 AND the year is NOT divisible by 100,
+            // OR if the year is divisible by 400.
+
+            //if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            //    return true; // If these conditions are met, it is a leap year
+            //return false; // Otherwise it is not a leap year
+
+            // Method 2:
+            // In C#, the result of the expression inside return statement is automatically treated as a boolean,
+            // therefore we don't need to explicit true or false return statements
+            return ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
+
+            // Method 3: 
+            // Same result produced as previous methods however may come across as less readable
+            // because of use of the ternary operator
+            // return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ? true : false;
+
+            // Method 4:
+            // return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
+
+            // Method 5:
+            // return (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0));
+
+            // Built-in C# method
+            // return DateTime.IsLeapYear(year);
+
+
+
+
         }
     }
 }
