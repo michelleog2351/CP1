@@ -36,7 +36,15 @@ namespace BookingUpForBeauty
         public static DateTime Schedule(string appointmentDateDescription)
         {
             //TODO: Implement the method as described in the document comments. 
-            throw new NotImplementedException("Please implement the (static) Appointment.Schedule() method");
+            //throw new NotImplementedException("Please implement the (static) Appointment.Schedule() method");
+
+            // dd/mm/yyyy
+
+            //DateTime schedule = DateTime.Parse("25/07/2019 ", new CultureInfo("en-IE", false));
+            DateTime schedule = DateTime.Parse(appointmentDateDescription, new CultureInfo("en-IE", false));
+            //String input = "25/07/2019 13:45:00";
+
+            return schedule;
         }
 
         /// <summary>
@@ -54,6 +62,8 @@ namespace BookingUpForBeauty
         {
             //TODO: Implement the method as described in the document comments. 
             throw new NotImplementedException("Please implement the (static) Appointment.HasPassed() method");
+            
+             
         }
 
         /// <summary>
@@ -70,7 +80,12 @@ namespace BookingUpForBeauty
         public static bool IsAfternoonAppointment(DateTime appointmentDate)
         {
             //TODO: Implement the method as described in the document comments. 
-            throw new NotImplementedException("Please implement the (static) Appointment.IsAfternoonAppointment() method");
+            //throw new NotImplementedException("Please implement the (static) Appointment.IsAfternoonAppointment() method");
+
+            //if (DateTime.Parse(appointmentDate).ToString(), new CultureInfo("en-IE", false))
+            DateTime();
+            if (appointmentDate, new CultureInfo("en-US", false));
+            return true;
         }
 
         /// <summary>

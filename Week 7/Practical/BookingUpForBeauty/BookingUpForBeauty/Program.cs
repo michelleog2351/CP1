@@ -15,3 +15,5 @@ Thread.CurrentThread.CurrentUICulture = enIeCulture;
 
 // When constructing strings from multiple elements you should use the StringBuilder class
 // https://learn.microsoft.com/en-us/dotnet/api/system.text.stringbuilder
+
+DateTime tempDateTime = Appointment.Schedule("25/07/2019 13:45:00");
