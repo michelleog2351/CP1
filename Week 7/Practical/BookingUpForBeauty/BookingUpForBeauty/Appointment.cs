@@ -83,9 +83,11 @@ namespace BookingUpForBeauty
             //throw new NotImplementedException("Please implement the (static) Appointment.IsAfternoonAppointment() method");
 
             //if (DateTime.Parse(appointmentDate).ToString(), new CultureInfo("en-IE", false))
-            DateTime();
-            if (appointmentDate, new CultureInfo("en-US", false));
-            return true;
+
+            //if (appointmentDate, new CultureInfo("en-US", false));
+            //return true;
+
+            return appointmentDate.Hour >= 12 && appointmentDate.Hour < 18;
         }
 
         /// <summary>
@@ -100,9 +102,11 @@ namespace BookingUpForBeauty
         public static string Description(DateTime appointmentDate)
         {
             //TODO: Implement the method as described in the document comments. 
-            throw new NotImplementedException("Please implement the (static) Appointment.Description() method");
+            //throw new NotImplementedException("Please implement the (static) Appointment.Description() method");
             // See: https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
+            return "You have an appointment on " + appointmentDate.ToString("dd/MM/yyyy h:mm:ss tt", CultureInfo.CreateSpecificCulture("en-US")) + ".";
         }
+    }
 
         /// <summary>
         /// The <c>AnniversaryDate</c> method returns this year's anniversary date, 
@@ -114,7 +118,8 @@ namespace BookingUpForBeauty
         public static DateTime AnniversaryDate()
         {
             //TODO: Implement the method as described in the document comments. 
-            throw new NotImplementedException("Please implement the (static) Appointment.AnniversaryDate() method");
+            //throw new NotImplementedException("Please implement the (static) Appointment.AnniversaryDate() method");
+            return new DateTime(DateTime.Now.Year, 9, 15, 0, 0, 0);
         }
     }
 }
